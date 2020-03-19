@@ -23,7 +23,7 @@ def calculator(first_number, second_number, operator):
 first_number = int(input("첫 번째 수를 입력하세요 : "))
 second_number = int(input("두 번째 수를 입력하세요 : "))
 operator = input("어떤 연산을 하실 건가요? : ")
-while operator != '+' and operator != '-' and operator != '*' and operator != '/':
+while operator not in ['+', '-', '*', '/']:
     print("연산기호가 잘못 입력되었습니다.")
     operator = input("어떤 연산을 하실 건가요? : ")
 
